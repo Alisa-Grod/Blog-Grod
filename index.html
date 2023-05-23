@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Школьный блог</title>
+
+    <!--Мета теги-->
+    <meta name="title" content="Школьный проект" />
+    <meta name="description" content="Это блог про школьные события" />
+
+    <!--Фавикон-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/svg" />
+
+    <!--Шрифты-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--CSS-->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!--
+      - HEADER
+    -->
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo">
+          <img src="./logo.png" width="119" height="37" alt="Wren logo" />
+        </a>
+
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+            <a href="#" class="logo">
+              <img src="./logo.png" width="119" height="37" alt="Wren logo" />
+            </a>
+
+            <button
+              class="nav-close-btn"
+              aria-label="close menu"
+              data-nav-toggler
+            >
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li>
+              <a href="#home" class="navbar-link hover-1" data-nav-toggler
+                >Главная</a
+              >
+            </li>
+
+            <li>
+              <a href="#topics" class="navbar-link hover-1" data-nav-toggler
+                >Топики</a
+              >
+            </li>
+
+            <li>
+              <a href="#featured" class="navbar-link hover-1" data-nav-toggler
+                >Рекомендуемые статьи</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="#footer-info"
+                class="navbar-link hover-1"
+                data-nav-toggler
+                >Контакты</a
+              >
+            </li>
+          </ul>
+
+          <div class="navbar-bottom">
+            <div class="profile-card">
+              <img
+                src="./assets/images/author-1.png"
+                width="48"
+                height="48"
+                alt="Steven"
+                class="profile-banner"
+              />
+
+              <div>
+                <p class="card-title">Привет</p>
+
+                <p class="card-subtitle">У нас 3 новые статьи</p>
+              </div>
+            </div>
+
+            <ul class="link-list">
+              <li>
+                <a href="#" class="navbar-bottom-link hover-1">Профиль</a>
+              </li>
+
+              <li>
+                <a href="#" class="navbar-bottom-link hover-1"
+                  >Сохраненные статьи</a
+                >
+              </li>
+
+              <li>
+                <a href="#" class="navbar-bottom-link hover-1">Новый пост</a>
+              </li>
+
+              <li>
+                <a href="#" class="navbar-bottom-link hover-1">Мои лайки</a>
+              </li>
+
+              <li>
+                <a href="#" class="navbar-bottom-link hover-1">Настройки</a>
+              </li>
+
+              <li>
+                <a href="#" class="navbar-bottom-link hover-1">Выйти</a>
+              </li>
+            </ul>
+          </div>
+
+          <p class="copyright-text">2023 © Grodskaya Alisa</p>
+        </nav>
+
+        <a href="https://t.me/blog_al" class="btn btn-primary">Подписаться</a>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+      </div>
+    </header>
+    <main>
+      <article>
+        <!-- 
+          - #HERO
+        -->
+
+        <!-- 
+          - #TOPICS
+        -->
+
+        <section class="topics" id="topics" aria-labelledby="topic-label">
+          <div class="container">
+            <div class="card topic-card">
+              <div class="card-content">
+                <h2
+                  class="headline headline-2 section-title card-title"
+                  id="topic-label"
+                >
+                  Интересные темы
+                </h2>
+
+                <p class="card-text">
+                  Не пропустите последние новости о школьной жизни, достижениях
+                  и мероприятиях
+                </p>
+
+                <div class="btn-group">
+                  <button
+                    class="btn-icon"
+                    aria-label="previous"
+                    data-slider-prev
+                  >
+                    <ion-icon name="arrow-back" aria-hidden="true"></ion-icon>
+                  </button>
+
+                  <button class="btn-icon" aria-label="next" data-slider-next>
+                    <ion-icon
+                      name="arrow-forward"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </button>
+                </div>
+              </div>
+
+              <div class="slider" data-slider>
+                <ul class="slider-list" data-slider-container>
+                  <li class="slider-item">
+                    <a href="#" class="slider-card">
+                      <figure
+                        class="slider-banner img-holder"
+                        style="--width: 507; --height: 618"
+                      >
+                        <img
+                          src="./assets/images/topic-1.png"
+                          width="507"
+                          height="618"
+                          loading="lazy"
+                          alt="Sport"
+                          class="img-cover"
+                        />
+                      </figure>
+
+                      <div class="slider-content">
+                        <span class="slider-title">Мероприятия</span>
+
+                        <p class="slider-subtitle">2 статьи</p>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="slider-item">
+                    <a href="https://t.me/blog_al/2" class="slider-card">
+                      <figure
+                        class="slider-banner img-holder"
+                        style="--width: 507; --height: 618"
+                      >
+                        <img
+                          src="./assets/images/topic-2.png"
+                          width="507"
+                          height="618"
+                          loading="lazy"
+                          alt="Travel"
+                          class="img-cover"
+                        />
+                      </figure>
+
+                      <div class="slider-content">
+                        <span class="slider-title">Достижения</span>
+
+                        <p class="slider-subtitle">3 статьи</p>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="slider-item">
+                    <a href="#" class="slider-card">
+                      <figure
+                        class="slider-banner img-holder"
+                        style="--width: 507; --height: 618"
+                      >
+                        <img
+                          src="./assets/images/topic-3.png"
+                          width="507"
+                          height="618"
+                          loading="lazy"
+                          alt="Design"
+                          class="img-cover"
+                        />
+                      </figure>
+
+                      <div class="slider-content">
+                        <span class="slider-title">Школьная жизнь</span>
+
+                        <p class="slider-subtitle">1 статья</p>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="slider-item">
+                    <a href="#" class="slider-card">
+                      <figure
+                        class="slider-banner img-holder"
+                        style="--width: 507; --height: 618"
+                      >
+                        <img
+                          src="./assets/images/topic-4.png"
+                          width="507"
+                          height="618"
+                          loading="lazy"
+                          alt="Movie"
+                          class="img-cover"
+                        />
+                      </figure>
+
+                      <div class="slider-content">
+                        <span class="slider-title">Обучение</span>
+
+                        <p class="slider-subtitle">1 статья</p>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+          - #FEATURED POST
+        -->
+
+        <section class="section feature" aria-label="feature" id="featured">
+          <div class="container">
+            <h2 class="headline headline-2 section-title">
+              <span class="span">Статьи</span>
+            </h2>
+
+            <p class="section-text">Избранные статьи и новости</p>
+
+            <ul class="feature-list">
+              <li>
+                <div class="card feature-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 1602; --height: 903"
+                  >
+                    <img
+                      src="./assets/images/9 мая.webp"
+                      width="1602"
+                      height="903"
+                      loading="lazy"
+                      alt="День Победы в разных странах мира"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <div class="card-wrapper">
+                      <div class="card-tag">
+                        <a href="#" class="span hover-2">#Travel</a>
+
+                        <a href="#" class="span hover-2">#Lifestyle</a>
+                      </div>
+
+                      <div class="wrapper">
+                        <ion-icon
+                          name="time-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+
+                        <span class="span">3 минуты чтения</span>
+                      </div>
+                    </div>
+
+                    <h3 class="headline headline-3">
+                      <a href="#" class="card-title hover-2">
+                        10 самых необычных школ мира
+                      </a>
+                    </h3>
+
+                    <div class="card-wrapper">
+                      <div class="profile-card">
+                        <div>
+                          <p class="card-subtitle">1 Мая 2023</p>
+                        </div>
+                      </div>
+
+                      <a href="#" class="card-btn">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="card feature-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 1602; --height: 903"
+                  >
+                    <img
+                      src="./assets/images/Проблемы с изучением исотрии.jpg"
+                      width="1602"
+                      height="903"
+                      loading="lazy"
+                      alt="Проблемы с изучением истории"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <div class="card-wrapper">
+                      <div class="card-tag">
+                        <a href="#" class="span hover-2">#Design</a>
+
+                        <a href="#" class="span hover-2">#Movie</a>
+                      </div>
+
+                      <div class="wrapper">
+                        <ion-icon
+                          name="time-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+
+                        <span class="span">5 минут чтения</span>
+                      </div>
+                    </div>
+
+                    <h3 class="headline headline-3">
+                      <a href="#" class="card-title hover-2">
+                        10 самых необычных школ мира
+                      </a>
+                    </h3>
+
+                    <div class="card-wrapper">
+                      <div class="profile-card">
+                        <div>
+                          <p class="card-subtitle">1 Мая 2023</p>
+                        </div>
+                      </div>
+
+                      <a href="#" class="card-btn">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="card feature-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 1602; --height: 903"
+                  >
+                    <img
+                      src="./assets/images/Основные приёмы вязания крючком.jpg"
+                      width="1602"
+                      height="903"
+                      loading="lazy"
+                      alt="Основные приёмы вязания крючком"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <div class="card-wrapper">
+                      <div class="card-tag">
+                        <a href="#" class="span hover-2">#Design</a>
+
+                        <a href="#" class="span hover-2">#Movie</a>
+                      </div>
+
+                      <div class="wrapper">
+                        <ion-icon
+                          name="time-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+
+                        <span class="span">2 минуты чтения</span>
+                      </div>
+                    </div>
+
+                    <h3 class="headline headline-3">
+                      <a href="#" class="card-title hover-2">
+                        10 самых необычных школ мира
+                      </a>
+                    </h3>
+
+                    <div class="card-wrapper">
+                      <div class="profile-card">
+                        <div>
+                          <p class="card-subtitle">1 Мая 2023</p>
+                        </div>
+                      </div>
+
+                      <a href="#" class="card-btn">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="card feature-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 1602; --height: 903"
+                  >
+                    <img
+                      src="./assets/images/Как заинтересовать ученика историей.png"
+                      width="1602"
+                      height="903"
+                      loading="lazy"
+                      alt="Как заинтересовать ученика историей"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <div class="card-wrapper">
+                      <div class="card-tag">
+                        <a href="#" class="span hover-2">#Design</a>
+
+                        <a href="#" class="span hover-2">#Movie</a>
+                      </div>
+
+                      <div class="wrapper">
+                        <ion-icon
+                          name="time-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+
+                        <span class="span">3 минуты чтения</span>
+                      </div>
+                    </div>
+
+                    <h3 class="headline headline-3">
+                      <a href="#" class="card-title hover-2">
+                        10 самых необычных школ мира
+                      </a>
+                    </h3>
+
+                    <div class="card-wrapper">
+                      <div class="profile-card">
+                        <div>
+                          <p class="card-subtitle">1 Мая 2023</p>
+                        </div>
+                      </div>
+
+                      <a href="#" class="card-btn">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="card feature-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 1602; --height: 903"
+                  >
+                    <img
+                      src="./assets/images/8 стилей рисунков в разной технике.jpg"
+                      width="1602"
+                      height="903"
+                      loading="lazy"
+                      alt="8 стилей рисунков в разной технике"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <div class="card-wrapper">
+                      <div class="card-tag">
+                        <a href="#" class="span hover-2">#Design</a>
+
+                        <a href="#" class="span hover-2">#Movie</a>
+                      </div>
+
+                      <div class="wrapper">
+                        <ion-icon
+                          name="time-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+
+                        <span class="span">2 минуты чтения</span>
+                      </div>
+                    </div>
+
+                    <h3 class="headline headline-3">
+                      <a href="#" class="card-title hover-2">
+                        10 самых необычных школ мира
+                      </a>
+                    </h3>
+
+                    <div class="card-wrapper">
+                      <div class="profile-card">
+                        <div>
+                          <p class="card-subtitle">1 Мая 2023</p>
+                        </div>
+                      </div>
+
+                      <a href="#" class="card-btn">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <a href="https://t.me/blog_al" class="btn btn-secondary">
+              <span class="span">Все статьи</span>
+
+              <ion-icon name="link-outline"></ion-icon>
+            </a>
+          </div>
+
+          <img
+            src="./assets/images/shadow-3.svg"
+            width="500"
+            height="1500"
+            loading="lazy"
+            alt=""
+            class="feature-bg"
+          />
+        </section>
+
+        <!-- 
+          - #POPULAR TAGS
+        -->
+
+        <!-- 
+          - #RECENT POST
+        -->
+      </article>
+    </main>
+
+    <!-- 
+      - #FOOTER
+    -->
+
+    <footer>
+      <div class="container">
+        <div class="card footer">
+          <div class="section footer-top" id="footer-info">
+            <div class="footer-list">
+              <p class="footer-list-title">Новостная рассылка</p>
+
+              <p class="footer-text">
+                Подпишитесь, чтобы первыми получать последние вдохновляющие нас
+                истории, тематические исследования и новости отрасли.
+              </p>
+
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Ваше имя"
+                  required
+                  class="input-field"
+                  autocomplete="off"
+                />
+
+                <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+              </div>
+
+              <div class="input-wrapper">
+                <input
+                  type="email"
+                  name="email_address"
+                  placeholder="Email"
+                  required
+                  class="input-field"
+                  autocomplete="off"
+                />
+
+                <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+              </div>
+
+              <a href="https://t.me/blog_al" class="btn btn-primary">
+                <span class="span">Подписаться</span>
+
+                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <p class="copyright">
+              &copy; 2023
+              <a href="https://t.me/monika_vvl9" class="copyright-link"
+                >Grodskaya Alisa.</a
+              >
+            </p>
+            <div class="footer-link">
+              <div>
+                <a href="https://t.me/blog_al"
+                  ><img src="./assets/images/telegram.png" alt="" width="24"
+                /></a>
+              </div>
+              <div>
+                <a href="#"
+                  ><img src="./assets/images/vk.png" alt="" width="24"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+      - #BACK TO TOP
+    -->
+
+    <a
+      href="#top"
+      class="back-top-btn"
+      aria-label="back to top"
+      data-back-top-btn
+    >
+      <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+    </a>
+
+    <!--JS-->
+    <script src="./assets/js/script.js"></script>
+
+    <!--IONIcon-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
